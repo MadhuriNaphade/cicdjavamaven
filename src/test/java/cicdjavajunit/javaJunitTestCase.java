@@ -7,23 +7,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import junit.framework.Assert;
+
 public class javaJunitTestCase {
-
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		javaJunitAdd a = new javaJunitAdd();
+		assertEquals(20,a.add(10,10));
 	}
 
 }
